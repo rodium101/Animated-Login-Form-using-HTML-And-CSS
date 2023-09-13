@@ -1,0 +1,156 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
+
+  }
+
+  html, body{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+background: radial-gradient(circle, rgba(188,63,232,1) 0%, rgba(2,14,27,0.9220063025210083) 100%);
+ }
+
+ .container{
+  background: #fff;
+  max-width: 350px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.20);
+ }
+
+ .container form .title{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: relative;
+ }
+ .container form .title::before{
+  content: '' ;
+  position: absolute;
+  height: 4px;
+  width: 33px;
+  bottom: 3px;
+  left: 0;
+  border-radius: 5px;
+background: radial-gradient(circle, rgba(188,63,232,1) 0%, rgba(2,14,27,0.9220063025210083) 100%);
+ }
+
+ .container form .input-box{
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+ }
+ .container form .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+
+ }
+
+ .container form .underline:before{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+ }
+ .container form .underline::after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: radial-gradient(circle, rgba(188,63,232,1) 0%, rgba(2,14,27,0.9220063025210083) 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+ }
+ .container form .input-box input:focus ~ .underline:after,
+ .container form .input-box input:valid ~ .underline:after{
+
+transform: scaleX(1);
+transform-origin: left;
+ }
+
+ .container form .input-box input[type="submit"]{
+  font-size: 17px;
+  color: #fff;
+  background: radial-gradient(circle, rgba(188,63,232,1) 0%, rgba(2,14,27,0.9220063025210083) 100%);
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .container form .input-box input[type="submit"]:hover{
+  letter-spacing: 1px;
+  background: radial-gradient(circle, rgba(199,63,232,1) 0%, rgba(16,118,228,0.9220063025210083) 100%);
+ }
+
+ .container .option{
+  font-size: 14px;
+  text-align: center;
+ }
+
+ .container .facebook a, 
+ .container .twitter a{
+  display: block;
+  width: 100%;
+  height: 45px;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 20px;
+  color: #fff;
+  line-height: 45px;
+  border-radius: 5px;
+  text-align: center;
+ }
+
+ .container .facebook a{
+  background: radial-gradient(circle, rgba(5,6,84,1) 0%, rgba(27,27,96,0.9948354341736695) 100%);
+  margin: 20px 0 15px 0;
+ }
+
+ .container .twitter a{
+  background: radial-gradient(circle, rgba(22,139,232,1) 0%, rgba(16,118,228,0.9948354341736695) 100%);
+  margin: 20px 0 50px 0;
+ }
+
+ .container .facebook i, 
+ .container .twitter i{
+  padding-right: 12px;
+  font-size: 20px;
+  
+ }
+
+ .container .facebook a:hover{
+  background: radial-gradient(circle, rgba(8,8,111,1) 0%, rgba(8,8,111,0.9948354341736695) 100%);
+  
+ }
+
+ .container .twitter a:hover{
+  background: radial-gradient(circle, rgba(64,137,251,1) 0%, rgba(46,150,238,0.9948354341736695) 100%);
+
+ }
+
+
+
+
+
+
+
+
+
+
